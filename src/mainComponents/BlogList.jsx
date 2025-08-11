@@ -25,7 +25,7 @@ function blogList({blogData}) {
         <p className='text-center text-gray-700'>Start the first Blog!</p>
       ) : (
         newData.map((item) => {
-          return <Cards id={item.id} key={item.title} title={item.title} description={item.description} author={item.author} time={item.time}/>
+          return <Cards id={item.blog_id} key={item.title} title={item.title} description={item.description} author={item.username} time={item.time}/>
         })
       )}
       <div className='flex gap-10 justify-center items-center'>
